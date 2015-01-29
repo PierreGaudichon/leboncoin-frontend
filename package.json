@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "install": "sh build_system.sh"
+    "install": "sh build_system.sh",
+    "start": "node bin/server.js"
   },
   "dependencies": {
     "express": "^4.11.1",

@@ -9,4 +9,5 @@ Installation
 
 	git clone https://github.com/PierreGaudichon/leboncoin-frontend.git
 	npm install
+	npm start
 
