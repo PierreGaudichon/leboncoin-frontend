@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "install": "sh build_system.sh"
+  },
+  "dependencies": {
+    "express": "^4.11.1",
+    "htmltidy": "0.0.6",
+    "jsdom": "^3.1.0",
+    "kup": "^1.4.0",
+    "lodash": "^3.0.0",
+    "mustache": "^1.0.0",
+    "node-dom": "^0.1.0",
+    "request": "^2.51.0"
+  }
+}

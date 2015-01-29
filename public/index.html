@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Le Bon Coin - Front-End</title>
+</head>
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script>
+
+		$(function(){
+			var load = function(){
+				query = $("input").val();
+				query = query.split(" ").join("_");
+				window.location = "/" + query;
+			}
+
+			$("button").click(load);
+			$("input").keydown(function(e){
+				if(e.keycode == 13){
+					load();
+				}
+			});
+		});
+
+	</script>
+
+<body>
+
+	<header>
+		<h1>Le Bon Coin - Front-end</h1>
+	</header>
+
+	<section>
+		<input type="text">
+		<button>Search</button>
+	</section>
+
+	<section>
+		<ul> {{#items}}
+			<li><a href="{{href}}">{{title}}</a></li>
+		{{/items}} </ul>
+	</section>
+
+	<footer>
+		<p>
+			Copyright : Pierre Gaudichon, 2015
+		</p>
+		<p>
+			<a href="github.com/PierreGaudichon/leboncoin-frontend">Sources</a>
+		<p>
+	</footer>
+</body>
+</html>
